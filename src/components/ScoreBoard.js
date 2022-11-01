@@ -1,9 +1,9 @@
 
 const ScoreBoard = (props) => {
-    let score = 0
+    const {score} = props
     return(
         <div>
-            <h2>Score:</h2><p>{score}</p>
+            <h2>Score: {score}</h2>
         </div>
     )
 }

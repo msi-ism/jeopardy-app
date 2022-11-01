@@ -12,3 +12,6 @@ code {
     monospace;
 }
 
+.reveal {
+  display:none;
+}
