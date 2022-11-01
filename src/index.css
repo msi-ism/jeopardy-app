@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -27,11 +31,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+input {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 1px;
+
+}
+
+h2 {
+  font-family: 'Bungee';
+  color:maroon;
+}
+
+.increase {
+  
+  background-color:darkmagenta;
+  color: white;
+
+}
+
+.decrease {
+  background-color: goldenrod;
+   color: white;
+
+}
+
+.reveal-btn {
+  background-color:darkslateblue;
+  color: white;
+}
+
+.quest-btn {
+  background-color:darkcyan;
+  color: white;
+}
 
 .reveal {
   display:none;
 }
 
 .main-container {
-  margin-top: 20%;
+  margin-top: 15%;
+}
+
+.title {
+  font-size: 3vw;
+  font-family: 'Bungee';
+  color: black;
 }

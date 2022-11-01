@@ -13,7 +13,7 @@ const Reveal = (props) => {
     return(
     <div>
         <form className='' onClick={handleClick}>
-            <input type='button' value='Click Here to Reveal the Question'/>
+            <input className='reveal-btn' type='button' value='Click Here to Reveal the Question'/>
       </form>
     </div>
 )}

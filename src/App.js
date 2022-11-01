@@ -33,14 +33,18 @@ function App() {
     if (question) {
         return(
             <div className='main-container'>
-                <h2 className='title'>Welcome to Jeopardy</h2>
+                <h2 className='title'>Welcome to React Jeopardy!</h2>
                 <ScoreBoard />
                 <h2>Let's Play:</h2>
                 <Form getQuestion={getQuestion}/>
-                <h2>Category: </h2> {question[0].category.title.toUpperCase()}
-                <h2>Points: </h2> {question[0].value}
-                <h2>Answer:</h2><p>{question[0].question}</p>
-                <h2 className=''>Question:</h2><p className='reveal'>{question[0].answer}</p>
+                <h2 className='main-text'>Category: </h2> 
+                <h3 className='subtext'>{question[0].category.title.charAt(0).toUpperCase() + question[0].category.title.slice(1)}</h3>
+                <h2>Answer:</h2>
+                <h3>{question[0].question}</h3>
+                <h2>Points: </h2> 
+                <h3>{question[0].value}</h3>
+                <h2 className=''>Question:</h2>
+                <h3 className='reveal'>{question[0].answer}</h3>
                 <Reveal revealQuestion={revealQuestion}/>
 
 

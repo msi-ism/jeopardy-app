@@ -16,7 +16,7 @@ const Form = (props) => {
     return(
     <div>
         <form onSubmit={handleSubmit}>
-            <input type='submit' value='Get Question'/>
+            <input className='quest-btn' type='submit' value='Get Question'/>
       </form>
     </div>
 )}
