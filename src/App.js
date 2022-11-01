@@ -21,6 +21,7 @@ function App() {
           const data = await res.json()
           console.log(data)
           setQuestion(data)
+          document.querySelector(".reveal").style.display = 'none'
       } catch (error) {
           console.log(error)
       }
