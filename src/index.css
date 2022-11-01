@@ -1,3 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +13,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    65deg,
+    hsl(173deg 71% 77%) 0%,
+    hsl(214deg 55% 87%) 15%,
+    hsl(257deg 69% 80%) 44%,
+    hsl(326deg 92% 69%) 82%,
+    hsl(36deg 79% 65%) 100%
+  );
 }
 
 code {
@@ -14,4 +30,8 @@ code {
 
 .reveal {
   display:none;
+}
+
+.main-container {
+  margin-top: 20%;
 }

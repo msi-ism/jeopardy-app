@@ -7,8 +7,6 @@ import {useState, useEffect} from 'react'
 
 function App() {
   const [question, setQuestion] = useState(null)
-  let score = 0
-
   useEffect(() => {
       getQuestion()
   }, [])
@@ -34,9 +32,9 @@ function App() {
   const letsPlay = () => {
     if (question) {
         return(
-            <div>
-                <h1>Welcome to Jeopardy</h1>
-                <ScoreBoard score={score}/>
+            <div className='main-container'>
+                <h2 className='title'>Welcome to Jeopardy</h2>
+                <ScoreBoard />
                 <h2>Let's Play:</h2>
                 <Form getQuestion={getQuestion}/>
                 <h2>Category: </h2> {question[0].category.title.toUpperCase()}
