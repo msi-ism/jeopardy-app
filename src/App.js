@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import GetQuestion from './components/GetQuestion'
+import Question from './components/GetQuestion';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to Jeopardy</h1>
+      <h2>Score: </h2>
+        {/* <Score /> */}
+        <h2>Let's Play:</h2>
+        <h2>Category</h2>
+        <h2>Points:</h2>
+        <GetQuestion />
+
     </div>
   );
 }
